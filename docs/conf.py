@@ -20,7 +20,7 @@ LIB_PATH = os.path.join(CURR_PATH, os.path.pardir)
 sys.path.insert(0, LIB_PATH)
 
 project = "HypEx"
-copyright = "%s, AI Lab ML Tools" % str(datetime.datetime.now().year)
+copyright = f"{datetime.datetime.now().year}, AI Lab ML Tools"
 author = "AI Lab ML Tools"
 
 os.environ["DOCUMENTATION_ENV"] = "True"
@@ -37,7 +37,12 @@ extensions = [
     "IPython.sphinxext.ipython_console_highlighting",
 ]
 
-exclude_patterns = ["_build/*", "**.ipynb_checkpoints"]
+exclude_patterns = [
+    "_build/*",
+    "**.ipynb_checkpoints",
+    "Thumbs.db",
+    ".DS_Store",
+]
 
 # Delete external references
 autosummary_mock_imports = [
@@ -57,16 +62,11 @@ autosummary_mock_imports = [
     "seaborn",
     "json2html",
     "faiss",
-    "statsmodels"
+    "statsmodels",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
-
-# List of patterns, relative to source directory, that match files and
-# directories to ignore when looking for source files.
-# This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 # -- Options for HTML output -------------------------------------------------
 

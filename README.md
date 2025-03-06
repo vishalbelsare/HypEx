@@ -17,7 +17,7 @@ New interface! Import paths, class methods, and overall API structure will be di
 Old version (0.1.10) will no longer be supported.
 
 New tutorials are available to help you migrate: Check them
-out [here](https://github.com/sb-ai-lab/HypEx/tree/dev/architecture_v11/examples/tutorials).
+out [here](https://github.com/sb-ai-lab/HypEx/tree/master/examples/tutorials).
 
 Try the new version now by installing the beta release:
 
@@ -133,7 +133,7 @@ result.full_data  # old df_matched. Wide df with pairs
 result.indexes  # Only indexed pairs (good for join)
 
 ```  
-More about Matching [here](https://github.com/sb-ai-lab/HypEx/tree/dev/architecture_v11/examples/tutorials/MatchingTutorial.ipynb)
+More about Matching [here](https://github.com/sb-ai-lab/HypEx/tree/master/examples/tutorials/MatchingTutorial.ipynb)
 
 ### AA-test example
 
@@ -158,7 +158,7 @@ res.aa_score  # AA score
 res.best_split  # The best homogeneity split
 res.best_split_statistic  # Statistics for best split 
 ```
-More about AA test [here](https://github.com/sb-ai-lab/HypEx/tree/dev/architecture_v11/examples/tutorials/AATestTutorial.ipynb)
+More about AA test [here](https://github.com/sb-ai-lab/HypEx/tree/master/examples/tutorials/AATestTutorial.ipynb)
 
 ### AB-test example
 
@@ -182,7 +182,7 @@ test = ABTest(additional_tests=['t-test', 'u-test', 'chi2-test'])  # Use can cho
 result = test.execute(data)
 result.resume  # Resume of results
 ```
-More about A/B test [here](https://github.com/sb-ai-lab/HypEx/tree/dev/architecture_v11/examples/tutorials/ABTestTutorial.ipynb)
+More about A/B test [here](https://github.com/sb-ai-lab/HypEx/tree/master/examples/tutorials/ABTestTutorial.ipynb)
 
 ## Documentation
 
